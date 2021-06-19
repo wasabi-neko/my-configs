@@ -1,0 +1,109 @@
+{
+    // =========================================================================
+    // **General**
+    // =========================================================================
+    // Editor
+    "editor.cursorSmoothCaretAnimation": true,
+
+    // font
+    "editor.fontSize": 18,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    
+    // minimap
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.size": "fit",
+    "editor.minimap.showSlider": "always",
+
+    // custome color setting
+        // "tab.activeBackground": "#333333",
+        // "tab.activeBorder": "#39c5bb",
+        // "tab.border": "#565c5c",
+        // "statusBar.noFolderBackground": "#005f5f",
+        // "statusBar.debuggingBackground": "#005f5f",
+        // "editor.background": "#21252c"
+        //--------------------//
+    "workbench.colorCustomizations": {
+        "editor.background": "#191e1f",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+
+    // =========================================================================
+    // **Terminal**
+    // =========================================================================
+    "terminal.integrated.fontSize": 14,
+    "todo-tree.tree.showScanModeButton": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.iconTheme": "material-icon-theme",
+
+    // =============================================================================
+    // **For Some Extensions**
+    // =============================================================================
+    // Beautify
+    "beautify.config": {
+        "html": {
+            "indent_size": 4,
+        },
+    },
+
+    // VIM
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": true,
+    "vim.enableNeovim": true,
+
+    // =========================================================================
+    // **Language**
+    // =========================================================================
+    "[php]": {
+        "editor.tabSize": 4
+    },
+    "[html]": {
+        "editor.autoIndent": "advanced",
+        "editor.tabSize": 2,
+    },
+
+    // "clang-format.fallbackStyle": "{ BasedOnStyle: Chromium,Language: Cpp,MaxEmptyLinesToKeep: 3,IndentCaseLabels: false,AllowShortIfStatementsOnASingleLine: false,AllowShortCaseLabelsOnASingleLine: false,AllowShortLoopsOnASingleLine: false,DerivePointerAlignment: false,PointerAlignment: Right,SpaceAfterCStyleCast: true,TabWidth: 4,UseTab: Never,IndentWidth: 4,BreakBeforeBraces: Linux,AccessModifierOffset: -4}",
+    "clang-format.fallbackStyle": "LLVM",
+    "[c]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": false,
+    },
+    "[cpp]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnSave": false,
+    },
+    "cSpell.userWords": [
+        "newh"
+    ],
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.pythonPath": "/bin/python3",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+
+}
