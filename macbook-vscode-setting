@@ -1,0 +1,124 @@
+{
+    "workbench.tree.renderIndentGuides": "always",
+    "search.quickOpen.includeSymbols": true,
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.renderControlCharacters": true,
+
+    // Explorer
+    "explorer.sortOrder": "type",
+
+    // mini map
+        "editor.minimap.enabled": true,
+        "editor.minimap.showSlider": "mouseover",
+        "editor.minimap.renderCharacters": false,
+        "editor.minimap.size": "fill",
+
+    // cursor setting
+        "editor.cursorSmoothCaretAnimation": true,
+        
+    // custom theme SETTING
+        "workbench.colorCustomizations": {
+            "editor.background": "#272729",
+            "tab.activeBackground": "#333333",
+            "tab.inactiveBackground": "#1f1f1f",
+            "tab.border": "#565c5c",
+            "tab.activeBorder": "#39c5bb"
+        },
+        "background.enabled": false,
+        
+// temrinal integrated
+    "terminal.integrated.fontSize": 19,
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font",
+    "terminal.external.osxExec": "iterm.app",
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+
+// suggesion
+    "editor.suggest.filterGraceful": true,
+    // "editor.suggest.localityBonus": true,
+    "editor.suggestOnTriggerCharacters": true,
+    // "editor.wordBasedSuggestions": false,
+
+// codeing short cut
+    // "breadcrumbs.enabled": true,
+    // "breadcrumbs.showArrays": true,
+
+/// language settings
+    "editor.quickSuggestionsDelay": 10,
+    //General
+        "code-runner.runInTerminal": true,
+        
+
+    // python
+        "kite.showWelcomeNotificationOnStartup": false,
+        "editor.tokenColorCustomizations": {
+            "textMateRules": [{
+                "scope": "meta.function-call.generic.python",
+                "settings": {
+                    "foreground": "#9aee2c"
+                }
+            }]
+        },
+        "python.jediEnabled": false,
+        "autoDocstring.docstringFormat": "google",
+        "python.autoComplete.addBrackets": true,
+        "python.languageServer": "Pylance",
+    // HTML
+        "[html]": {
+            "editor.foldingStrategy": "auto",
+        },
+
+    // PHP
+        "php.executablePath": "/usr/bin/php",
+        "php.validate.enable": true,
+        "php.validate.run": "onType",
+        "php.suggest.basic": true,
+        
+    // C++
+        // "C_Cpp.clang_format_path": "/usr/local/Cellar/clang-format/2019-01-18/bin/clang-format",
+        "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+        "C_Cpp.updateChannel": "Insiders",
+
+        "[cpp]": {
+            "editor.formatOnType": true,
+            "editor.formatOnSave": true,
+        },
+        "[c]": {
+            "editor.formatOnType": true,
+        },
+        
+    // Java
+        "java.configuration.checkProjectSettingsExclusions": false,
+        
+/// TEMP/ others
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.suggestSelection": "first",
+    "todo-tree.tree.showScanModeButton": false,
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.meta": true,
+    },
+    "java.refactor.renameFromFileExplorer": "preview",
+    "sonarlint.rules": {
+        "java:S117": {
+            "level": "off"
+        },
+        "java:S3252": {
+            "level": "off"
+        }
+    },
+    "python.analysis.completeFunctionParens": true,
+    "material-icon-theme.folders.theme": "specific",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    
+}
