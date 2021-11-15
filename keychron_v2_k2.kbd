@@ -17,6 +17,18 @@ INFO:
 (defalias
     parr (tap-macro - >)
     farr (tap-macro = >)
+    heart (tap-macro : h e a r t :)
+    wah (tap-macro : W W W : spc : A A A : spc : H H H :)
+)
+
+;; Unicodes
+(defalias
+  ;; some unicode characters need to be defined in ~/.XCompose
+  ✔  #(ralt y y)  ;; heavy checkmark (✔)
+  ✘  #(ralt n n)  ;; heavy ballot (✘)
+  ⭐ #(ralt s t)  ;; star (⭐)
+  ♥  #(ralt h t)  ;; heart
+  👏 #(ralt c p)  ;; clap
 )
 
 ;; layers
@@ -58,11 +70,11 @@ INFO:
 
 (deflayer symbols
 ;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    _     _    _    _    _    _    _    _    _    _     _     _      _     _     _   
-    _     _    _    _    _    _    _    _    _    _     _     @parr @farr  _     _  
+    @wah  _    _    _    _    _    _    _    _    _     _     _      _     _     _   
+    _     _    _    _    _    _    _    _    @👏  _     _     @parr @farr  _     _  
     _     !    @    #    $    %    ^    &    *    \(    \)    _     _      _     _   
-    _     _    _    _    _    _    _    _    _    _     _     _     _            _   
-    _     _    _    _    _    _    _    _    _    _     _           _      _     _  
+    _     _    _    _    _    _    @♥   _    _    _     _     _     _            _   
+    _     _    @✘   _    @✔   _    _    _    _    _     _           _      _     _  
     _     _    _              _                   _           _     _      _     _   
 )
 
