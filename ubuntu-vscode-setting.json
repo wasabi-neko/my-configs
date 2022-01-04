@@ -1,9 +1,14 @@
 {
-    // =========================================================================
-    // **General**
-    // =========================================================================
+// =========================================================================
+// **General**
+// =========================================================================
+    "window.zoomLevel": 0.5,
+
     // Editor
     "editor.cursorSmoothCaretAnimation": true,
+    "editor.tabSize": 4,
+	"editor.detectIndentation": false,
+    "editor.insertSpaces": true,
 
     // font
     "editor.fontSize": 18,
@@ -19,44 +24,34 @@
         // "tab.activeBackground": "#333333",
         // "tab.activeBorder": "#39c5bb",
         // "tab.border": "#565c5c",
-        // "statusBar.noFolderBackground": "#005f5f",
-        // "statusBar.debuggingBackground": "#005f5f",
         // "editor.background": "#21252c"
         //--------------------//
     "workbench.colorCustomizations": {
+        // "tab.activeBackground": "#333333",
+        "tab.activeBorder": "#39c5bb",
+        "tab.border": "#565c5c",
+
         "editor.background": "#191e1f",
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+
+        "statusBar.background" : "#303030",
+        "statusBar.foreground": "#aee2e2",
+        "statusBarItem.hoverBackground": "#000000",
+        // "statusBarItem.hoverBackground": "#ffffff",
+        "statusBar.border": "#39c5bb",
     },
 
-    // =========================================================================
-    // **Terminal**
-    // =========================================================================
+// =========================================================================
+// **Terminal**
+// =========================================================================
     "terminal.integrated.fontSize": 14,
     "todo-tree.tree.showScanModeButton": false,
     "C_Cpp.updateChannel": "Insiders",
     "tabnine.experimentalAutoImports": true,
     "workbench.iconTheme": "material-icon-theme",
 
-    // =============================================================================
-    // **For Some Extensions**
-    // =============================================================================
-    // Beautify
-    "beautify.config": {
-        "html": {
-            "indent_size": 4,
-        },
-    },
-
-    // VIM
-    "vim.smartRelativeLine": true,
-    "vim.statusBarColorControl": true,
-    "vim.enableNeovim": true,
-
-    // =========================================================================
-    // **Language**
-    // =========================================================================
+// =========================================================================
+// **Language**
+// =========================================================================
     "[php]": {
         "editor.tabSize": 4
     },
@@ -81,7 +76,9 @@
         "editor.formatOnSave": false,
     },
     "cSpell.userWords": [
-        "newh"
+        "neko",
+        "newh",
+        "peko"
     ],
     "todo-tree.general.tags": [
         "BUG",
@@ -92,18 +89,78 @@
         "[ ]",
         "[x]"
     ],
+
+// =============================================================================
+// **For Extensions**
+// =============================================================================
+    // Beautify
+    "beautify.config": {
+        "html": {
+            "indent_size": 4,
+        },
+    },
+
+    // VIM
+    "vim.smartRelativeLine": true,
+    // the color control will fucked up my color settings, and I'm too lazy to setup all different colors for each mode
+    "vim.statusBarColorControl": false,     
+    "vim.enableNeovim": true,
+    "vim.easymotion": true,                 // usage: type "<leader> <leader>" to trigger easymotion mode
+    "vim.sneak": true,                      // usage: type "s <char> <char>" to jump to fist match <char><char> 
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true, 
+
+    "vim.leader": "<space>",                // set leader key
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {   // quickly type kj to escape from insert mode
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {   // temporary disable highlight from searching
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "m"],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "bookmarks.list"
+            ]
+        }
+    ],
+
+// =========================================================================
+// Others
+// =========================================================================
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
     "workbench.colorTheme": "Monokai Pro (Filter Machine)",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
+
     "python.pythonPath": "/bin/python3",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.cursorStyle": "line",
-    "editor.insertSpaces": false,
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
-
+    "python.defaultInterpreterPath": "/bin/python3",
 }
