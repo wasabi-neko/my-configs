@@ -31,6 +31,20 @@ INFO:
   👏 #(ralt c p)  ;; clap
 )
 
+;; dul-functional keys
+(defalias
+    ;; as (tap-hold 250 a lsft)
+    ;; ;s (tap-hold 250 ; rsft)
+    as   (tap-hold-next-release 250 a (tap-next a lsft))
+    ;s   (tap-hold-next-release 250 ; (tap-next ; lsft))
+)
+
+;; Ctrl macors
+(defalias
+    ctll (around lctl left)
+    ctlr (around lctl rght)
+)
+
 ;; layers
 (defalias
     snavi (tap-hold 250 spc (layer-toggle navigation))
@@ -53,7 +67,7 @@ INFO:
     esc   f1   f2   f3   f4   f5   f6   f7   f8   f9    f10   f11   f12   prnt  del
    @gnum  1    2    3    4    5    6    7    8    9     0     -     =     bspc  pgup
    @tsym  q    w    e    r    t    y    u    i    o     p     [     ]     \     pgdn
-    lctl  a    s    d    f    g    h    j    k    l     ;     '     ret         home
+    lctl  @as  s    d    f    g    h    j    k    l     @;s   '     ret         home
     lsft  z    x    c    v    b    n    m    ,    .     /     rsft        up    end
     lctl  lalt lmet           @snavi              rmet        ralt  left  down  rght
 )
@@ -62,9 +76,9 @@ INFO:
 ;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
     _     _    _    _    _    _    _    _    _    _     _     _     _     _     _
     _     _    _    _    _    _    _    _    _    _     _     _     _     _     pgup
-    esc   _    _    _    _    _    home pgup pgdn end   _     _     _     _     pgdn
+    esc   _    _   @ctlr _    _    home pgup pgdn end   _     _     _     _     pgdn
     lctl  _    _    pgdn _    _    left down up   rght  _     _     _           home
-    lsft  _    _    _    _    bspc ret  _    _    _     _           rsft  up    end
+    lsft  _    bspc _    _   @ctll ret  _    _    _     _           rsft  up    end
     lctl  lalt lmet           _                   rmet        ralt  left  down  rght
 )
 
