@@ -1,4 +1,4 @@
-#| -------------------------------------------------------------
+| -------------------------------------------------------------
 INFO:
     Keyboard: keychron_k2_v2
     layout: 65%
@@ -53,61 +53,61 @@ INFO:
 )
 
 (defsrc
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    esc   f1   f2   f3   f4   f5   f6   f7   f8   f9    f10   f11   f12   prnt  del
-    grv   1    2    3    4    5    6    7    8    9     0     -     =     bspc  pgup
-    tab   q    w    e    r    t    y    u    i    o     p     [     ]     \     pgdn
-    caps  a    s    d    f    g    h    j    k    l     ;     '     ret         home
-    lsft  z    x    c    v    b    n    m    ,    .     /     rsft        up    end
-    lctl  lmet lalt           spc                 ralt        rctl  left  down  rght
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13     c14
+    esc     f1     f2     f3     f4     f5     f6     f7     f8     f9      f10     f11     f12     prnt    del
+    grv     1      2      3      4      5      6      7      8      9       0       -       =       bspc    pgup
+    tab     q      w      e      r      t      y      u      i      o       p       [       ]       \       pgdn
+    caps    a      s      d      f      g      h      j      k      l       ;       '       ret             home
+    lsft    z      x      c      v      b      n      m      ,      .       /       rsft            up      end
+    lctl    lmet   lalt                 spc                         ralt            rctl    left    down    rght
 )
 
 (deflayer normal
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    esc   f1   f2   f3   f4   f5   f6   f7   f8   f9    f10   f11   f12   prnt  del
-   @gnum  1    2    3    4    5    6    7    8    9     0     -     =     bspc  pgup
-   @tsym  q    w    e    r    t    y    u    i    o     p     [     ]     \     pgdn
-    lctl  @as  s    d    f    g    h    j    k    l     @;s   '     ret         home
-    lsft  z    x    c    v    b    n    m    ,    .     /     rsft        up    end
-    lctl  lalt lmet           @snavi              rmet        ralt  left  down  rght
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13     c14
+    esc     f1     f2     f3     f4     f5     f6     f7     f8     f9      f10     f11     f12     prnt    del
+    @gnum   1      2      3      4      5      6      7      8      9       0       -       =       bspc    pgup
+    @tsym   q      w      e      r      t      y      u      i      o       p       [       ]       \       pgdn
+    lctl    @as    s      d      f      g      h      j      k      l       @;s     '       ret             home
+    lsft    z      x      c      v      b      n      m      ,      .       /       rsft            up      end
+    lctl    lalt   lmet                 @snavi                      rmet            ralt    left    down    rght
 )
 
 (deflayer navigation
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     _
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     pgup
-    esc   _    _   @ctlr _    _    home pgup pgdn end   _     _     _     _     pgdn
-    lctl  _    _    pgdn _    _    left down up   rght  _     _     _           home
-    lsft  _    bspc _    _   @ctll ret  _    _    _     _           rsft  up    end
-    lctl  lalt lmet           _                   rmet        ralt  left  down  rght
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13   c14
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     _
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     pgup
+    esc     _      _      @ctlr  _      _      home   pgup   pgdn   end     _       _       _       _     pgdn
+    lctl    _      _      pgdn   _      _      left   down   up     rght    _       _       _             home
+    lsft    _      bspc   _      _      @ctll  ret    _      _      _       _               rsft    up    end
+    lctl    lalt   lmet                 _                           rmet            ralt    left    down  rght
 )
 
 (deflayer symbols
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    @wah  _    _    _    _    _    _    _    _    _     _     _      _     _     _   
-    _     _    _    _    _    _    _    _    @👏  _     _     @parr @farr  _     _  
-    _     !    @    #    $    %    ^    &    *    \(    \)    _     _      _     _   
-    _     _    _    _    _    _    @♥   _    _    _     _     _     _            _   
-    _     _    @✘   _    @✔   _    _    _    _    _     _           _      _     _  
-    _     _    _              _                   _           _     _      _     _   
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13   c14
+    @wah    _      _      _      _      _      _      _      _      _       _       _        _       _     _   
+    _       _      _      _      _      _      _      _      @👏    _       _       @parr   @farr    _     _  
+    _       !      @      #      $      %      ^      &      *      \(      \)      _       _        _     _   
+    _       _      _      _      _      _      @♥     _      _      _       _       _       _              _   
+    _       _      @✘     _      @✔     _      _      _      _      _       _               _        _     _  
+    _       _      _                    _                           _               _       _        _     _   
 )
 
 (deflayer numbers
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     _  
-    _     _    _    _    _    _    _    7    8    9     =     -     +     _     _   
-    _     _    _    _    _    _    _    4    5    6     _     /     *     _     _   
-    _     _    _    _    _    _    _    1    2    3     _     _     _           _   
-    _     _    _    _    _    _    _    0    _    _     _           _     _     _  
-    _     _    _              _                   _           _     _     _     _   
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13   c14
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     _  
+    _       _      _      _      _      _      _      7      8      9       =       -       +       _     _   
+    _       _      _      _      _      _      _      4      5      6       _       /       *       _     _   
+    _       _      _      _      _      _      _      1      2      3       _       _       _             _   
+    _       _      _      _      _      _      _      0      _      _       _               _       _     _  
+    _       _      _                    _                           _               _       _       _     _   
 )
 
 (deflayer empty
-;;  c0    c1   c2   c3   c4   c5   c6   c7   c8   c9    c10   c11   c12   c13   c14
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     _  
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     _   
-    _     _    _    _    _    _    _    _    _    _     _     _     _     _     _   
-    _     _    _    _    _    _    _    _    _    _     _     _     _           _   
-    _     _    _    _    _    _    _    _    _    _     _           _     _     _  
-    _     _    _              _                   _           _     _     _     _   
+;;  c0      c1     c2     c3     c4     c5     c6     c7     c8     c9      c10     c11     c12     c13   c14
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     _  
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     _   
+    _       _      _      _      _      _      _      _      _      _       _       _       _       _     _   
+    _       _      _      _      _      _      _      _      _      _       _       _       _             _   
+    _       _      _      _      _      _      _      _      _      _       _               _       _     _  
+    _       _      _                    _                           _               _       _       _     _   
 )
